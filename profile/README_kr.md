@@ -1,6 +1,10 @@
 # 소개
 
-TODO : fatima 프레임워크란 ... ?
+일반적으로 server-side backend 작업에는 다양한 환경에서 다양한 업무를 진행합니다.
+TODO : 소개글...
+
+fatima-go는 [golang](https://go.dev/) 언어로 프로그램 개발을 손쉽고 빠르게 진행할 수 있도록 도와주는 개발 프레임워크를 제공합니다<BR>
+또한 내가 개발한 프로그램을 디플로이하고 모니터링할 수 있는 운영 환경을 제공합니다<BR>
 
 ## 언어
 
@@ -8,27 +12,16 @@ TODO : fatima 프레임워크란 ... ?
 - [한국어](./README_kr.md)
 
 ## 프로젝트
+fatima-go는 크게 2가지 관점에서 접근할 수 있습니다
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo, velit vitae bibendum sollicitudin, nisi urna convallis dolor, non posuere arcu sapien a nunc. Ut in arcu commodo, tincidunt nunc sit amet, malesuada risus. Nam molestie ligula non lectus porttitor dictum. Suspendisse egestas ultrices odio ac finibus. Nulla tempor, magna id rhoncus tincidunt, dolor magna blandit lorem, ut aliquet tortor sapien nec sapien. Sed luctus libero sit amet neque iaculis, ut pharetra libero ultricies. Fusce a aliquet elit. Sed varius aliquet mauris, eu pharetra ante consectetur nec.
+- [golang 언어를 사용한 손쉬운 프로그램 개발](./development.md)
+- [fatima-go 프로세스들의 운영 환경](./operating.md)
 
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo, velit vitae bibendum sollicitudin, nisi urna convallis dolor, non posuere arcu sapien a nunc. Ut in arcu commodo, tincidunt nunc sit amet, malesuada risus. Nam molestie ligula non lectus porttitor dictum. Suspendisse egestas ultrices odio ac finibus. Nulla tempor, magna id rhoncus tincidunt, dolor magna blandit lorem, ut aliquet tortor sapien nec sapien. Sed luctus libero sit amet neque iaculis, ut pharetra libero ultricies. Fusce a aliquet elit. Sed varius aliquet mauris, eu pharetra ante consectetur nec.
+fatima-go 프로젝트는 개발자와 운영자에게 편의성을 제공하기 위한 프레임워크와 환경을 제공합니다
 
 ## 참여하기
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo, velit vitae bibendum sollicitudin, nisi urna convallis dolor, non posuere arcu sapien a nunc. Ut in arcu commodo, tincidunt nunc sit amet, malesuada risus. Nam molestie ligula non lectus porttitor dictum:
-
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo, velit vitae bibendum sollicitudin, nisi urna convallis dolor, non posuere arcu sapien a nunc. Ut in arcu commodo, tincidunt nunc sit amet, malesuada risus. Nam molestie ligula non lectus porttitor dictum. Suspendisse egestas ultrices odio ac finibus. Nulla tempor, magna id rhoncus tincidunt, dolor magna blandit lorem, ut aliquet tortor sapien nec sapien. Sed luctus libero sit amet neque iaculis, ut pharetra libero ultricies. Fusce a aliquet elit. Sed varius aliquet mauris, eu pharetra ante consectetur nec.
+TODO 
 
 ## 기여하기
 
@@ -36,4 +29,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo, velit
 
 ## 라이센스
 
-Fatima is licensed under the [MIT License](https://github.com/fatima/fatima/blob/main/LICENSE).
+Fatima is licensed under the [APACHE LICENSE, VERSION 2.0](https://www.apache.org/licenses/LICENSE-2.0).
