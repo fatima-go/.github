@@ -6,5 +6,7 @@ fatima-go에서 제공하는 fatima 운영환경은 우리가 개발한 프로�
 - [fatima 운영환경 살펴보기](./operating_detail.md)
 - [Windows 환경에서 WSL을 이용하여 Fatima 환경 구축](./operating_wsl.md)
 
-
-## 관련 repository
+## 운영과 관련된 repository
+| Repository                                                      | 내용                      |
+|-----------------------------------------------------------------|-------------------------|
+| [fatima-download](https://github.com/fatima-go/fatima-download) | 패키지 다운로드                |
