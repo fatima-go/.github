@@ -15,7 +15,8 @@ fatima-go는 [golang](https://go.dev/) 언어로 프로그램 개발을 손쉽�
 fatima-go는 크게 2가지 관점에서 접근할 수 있습니다
 
 - [golang 언어를 사용한 손쉬운 프로그램 개발](./development.md)
-- [fatima-go 프로세스들의 운영 환경](./operating.md)
+- [fatima 패키지를 사용한 프로세스들의 운영 환경](./operating.md)
+- [fatima 패키지 프로젝트](./package.md)
 
 fatima-go 프로젝트는 개발자와 운영자에게 편의성을 제공하기 위한 프레임워크와 환경을 제공합니다
 
@@ -29,4 +30,4 @@ TODO
 
 ## 라이센스
 
-Fatima is licensed under the [APACHE LICENSE, VERSION 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+fatima-go is licensed under the [APACHE LICENSE, VERSION 2.0](https://www.apache.org/licenses/LICENSE-2.0).
