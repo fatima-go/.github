@@ -1,6 +1,8 @@
 # 설치하기
 
 
+TODO-AUTHOR : @logan
+
 ## 운영 패키지 다운로드
 TODO 
 
