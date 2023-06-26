@@ -7,10 +7,10 @@
 1. [PS aware 처리](#3-ps-aware-처리)
 1. [UI(User Interactive) 프로그램 만들기](#4-ui--user-interactive--프로그램-만들기)
    1. [Goland 에서 mytool 프로젝트 생성](#41-goland-에서-mytool-프로젝트-생성)
-   1. [라이브러리 의존성 추가](#42-라이브러리-의존성-추가)
-   1. [기본 코드 작성](#43-기본-코드-작성) 
-   1. [ui.xml 파일 작성](#44-uixml-파일-작성)
-   1. [빌드와 배포](#45-빌드와-배포)
+   1. [기본 코드 작성](#42-기본-코드-작성) 
+   1. [ui.xml 파일 작성](#43-uixml-파일-작성)
+   1. [빌드와 배포](#44-빌드와-배포)
+   1. [Rollback](#45-rollback)
    1. [실행](#46-실행)
 
 
@@ -197,16 +197,7 @@ UI 프로그램은 메뉴를 XML 형태로 정의하고 사용자가 입력한 �
 
 ### 4.1 Goland 에서 mytool 프로젝트 생성
 
-
-### 4.2 라이브러리 의존성 추가
->라이브러리 의존성 추가
->```shell
->MN03:mytool djinch$ govendor init
->MN03:mytool djinch$ govendor fetch -tree throosea.com/fatima
->MN03:mytool djinch$ govendor fetch throosea.com/log
->```
-
-### 4.3 기본 코드 작성
+### 4.2 기본 코드 작성
 
 비어 있는 application.properties 파일을 생성해 둔다. 향후 각종 properties 를 설정하여 사용할 목적이다.
 
@@ -239,7 +230,7 @@ func (ui *UserInteraction) SayHello(name string) {
 
 위의 코드에서 SayHello 함수는 최종적으로 reflection 되어 호출될 함수이다.
 
-### 4.4 ui.xml 파일 작성
+### 4.3 ui.xml 파일 작성
 xml 파일명 규칙은 "**프로세스이름.ui.xml**" 이다. 따라서 파일 이름을 `mytool.ui.xml` 로 생성한다.
 
 ```xml
@@ -276,7 +267,7 @@ xml 파일명 규칙은 "**프로세스이름.ui.xml**" 이다. 따라서 파일
 
 여기까지 진행했다면 프로젝트 구조는 대략 아래와 같을 것이다.
 
-### 4.5 빌드와 배포
+### 4.4 빌드와 배포
 ```shell
 SKTX1100282MN03:mytool 1100282$ go install
 SKTX1100282MN03:mytool 1100282$ gofar mytool
@@ -293,7 +284,7 @@ far name : mytool.far (3486450 bytes). target : 1 juno enqueued
 ```
 참고로 UI 프로그램은 항상 실행되는 형태가 아니기 때문에 roproc 등을 통해 패키지에 프로세스를 추가할 필요가 없다.
 
-#### 4.5.1 Rollback
+#### 4.5 Rollback
 
 이전 형상으로 되돌리려면 아래와 같이 수행한다
 
