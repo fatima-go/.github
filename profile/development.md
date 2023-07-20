@@ -21,7 +21,7 @@ fatima 프레임워크를 이용해 프로그램을 개발한다면, 이러한 �
 ## 개발 방법
 golang 언어를 기반으로 fatima 프레임워크를 사용해 손쉽게 프로세스를 개발하는 방법은 아래 링크를 살펴보세요.
 
-- [golang을 이용한 fatima 프로세스 개발](./development_start.md)
-- [확장된 fatima 프로세스 개발](./development_ext.md)
-- [fatima 프로세스 디버깅과 테스트](./development_debug.md)
-- [fatima properties](./development_prop.md)
+- [golang을 이용한 fatima 프로세스 개발](/profile/development_start.md)
+- [확장된 fatima 프로세스 개발](/profile/development_ext.md)
+- [fatima 프로세스 디버깅과 테스트](/profile/development_debug.md)
+- [fatima properties](/profile/development_prop.md)

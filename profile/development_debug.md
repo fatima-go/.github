@@ -7,7 +7,7 @@
 > fatima 프로세스를 위해 다양한 개발 환경을 사용할 수 있습니다. 이 문서에서는 설명의 편의를 위해 다음 상황을 가정합니다.
 
 - 사용 중인 운영 체제: Linux 또는 OS X
-- 이미 [golang을 이용한 Fatima 프로세스 개발](./development_start.md)을 통해 개발 환경 설정이 완료된 상태
+- 이미 [golang을 이용한 Fatima 프로세스 개발](/profile/development_start.md)을 통해 개발 환경 설정이 완료된 상태
 - 개발 도구: GoLand
 
 ### 1.2 프로젝트 구조 정의

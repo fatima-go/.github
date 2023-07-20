@@ -29,7 +29,7 @@ Fatima 패키지 프로세스들은 편의상 그룹을 지정할 수 있습니�
 
 ## deploy topology example
 
-![fatima deploy topology](./blob/fatima-deploy-topology.png)
+![fatima deploy topology](/profile/blob/fatima-deploy-topology.png)
 
 # fatima 패키지 좀 더 살펴보기
 
