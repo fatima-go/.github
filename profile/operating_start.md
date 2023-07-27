@@ -77,7 +77,7 @@ alias so="source ~/.bash_profile"
 
 Fatima 를 다운로드, 압축 해제 후 환경변수 설정까지 끝났다면 아래와 같이 실행을 해 본다.
 
-startro 명령어를 통해 OPM 프로세스 그룹을 실행하고, rodis 명령어를 통해 패키지 프로세스 상태를 출력한다. (각 명령의 자세한 설명은 다른 챕터에서 진행)
+`startro` 명령어를 통해 OPM 프로세스 그룹을 실행할 수 있다.
 
 >Fatima 패키지 실행
 >```shell
@@ -91,6 +91,66 @@ startro 명령어를 통해 OPM 프로세스 그룹을 실행하고, rodis 명�
 >process juno STARTED. pid=21696
 >check process saturn
 >process saturn STARTED. pid=21697
+>```
+
+`rocontext` 명령어를 통해 context를 설정할 수 있다. 터미널에서 아래와 같이 명령어를 입력 후 현재 등록되어 있는 context를 확인해보자.
+
+>```shell
+>$ rocontext
+>More usage : rocontext -h
+>
+>CURRENT CONTEXT_NAME    JUPITER                                         USER        TZ
+>*       local           http://127.0.0.1:9190                           admin       Asia/Seoul
+>```
+
+최초 실행 시 기본적으로 `local` context가 등록되어 있으며, 아래 형태의 명령어를 통해 사용하는 환경에 맞게 개발 및 상용 등 context를 설정할 수 있다.
+
+>```shell
+>$ rocontext -l http://127.0.0.1:3000 add test_context
+>new context test_context added
+>
+>$ rocontext
+>More usage : rocontext -h
+>
+>CURRENT CONTEXT_NAME    JUPITER                                         USER        TZ
+>*       local           http://127.0.0.1:9190                           admin       Asia/Seoul
+>         test_context    http://127.0.0.1:3000                           
+>```
+
+다른 context를 사용하기 위해서는 context를 변경해야 한다. 아래 명령어를 통해 사용할 context를 변경할 수 있다.
+
+>```shell
+>$ rocontext use test_context
+>context test_context actived
+>
+>$ rocontext
+>More usage : rocontext -h
+>
+>CURRENT CONTEXT_NAME    JUPITER                                         USER        TZ
+>         local           http://127.0.0.1:9190                           admin       Asia/Seoul
+>*       test_context    http://127.0.0.1:3000        
+>```
+
+특정 context의 접속 계정은 아래와 같이 설정할 수 있다.
+
+>```shell
+>$ rocontext set test_context
+>Enter Username (default admin):
+>Enter Password:
+>Enter Timezone (default : Asia/Seoul):
+>
+>----------------------------------------
+>username : admin
+>password : ......
+>timezone : Asia/Seoul
+>context test_context set successfully
+>```
+
+이후 `rodis` 명령어를 통해 패키지 프로세스 상태를 출력한다. (각 명령의 자세한 설명은 다른 챕터에서 확인할 수 있다.)
+
+`rodis` 명령어는 현재 설정되어 있는 context의 패키지 프로세스들의 상태를 출력한다. 
+
+>```shell
 >macbook:throosea djinch$ rodis
 >2023-06-23 08:50:22 (Asia/Seoul)
 >[basic] macbook.local:default
@@ -102,8 +162,8 @@ startro 명령어를 통해 OPM 프로세스 그룹을 실행하고, rodis 명�
 >| saturn  | 21697 | ALIVE  | 0.0 | 11M | 18 | 2023-06-23 08:50:20 | 0  | OPM   |
 >+---------+-------+--------+-----+-----+----+---------------------+----+-------+
 >Total:3 (Alive:3, Dead:0), system is ACTIVE/SECONDARY
->macbook:throosea djinch$
 >```
+
 Fatima 패키지가 모두 정상적으로 실행된걸 볼 수 있다.
 
 ## 4. fatima 운영 환경 맛보기
