@@ -192,7 +192,7 @@ go version
 
 ```
 # download 
-wget http://throosea.com/fatimarepo/provision/fatima_linux_amd64.tar.gz 
+wget https://github.com/fatima-go/fatima-download/blob/main/fatima-package.linux-arm64.tar.gz
 # 압축해제 
 gzip -cd fatima_linux_amd64.tar.gz | tar xvf -
 ```
