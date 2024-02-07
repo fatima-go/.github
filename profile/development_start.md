@@ -8,7 +8,7 @@
 
 `Fatima`는 Go 언어로 작성된 프로세스 개발, 실행 관리 프레임워크입니다.
 
-자세한 소개는 `링크` 를 참고하시면 되고 해당 문서에서는 Fatima Framework 를 통해 Go 언어를 이용해서 프로세스를 개발하는 방법을 살패보겠습니다. 
+자세한 소개는 [여기](https://music-flo.atlassian.net/wiki/spaces/serverdevteam/pages/536182921/1.+Fatima)를 참고하시면 되고 해당 문서에서는 Fatima Framework 를 통해 Go 언어를 이용해서 프로세스를 개발하는 방법을 살패보겠습니다. 
 
 ---
 
