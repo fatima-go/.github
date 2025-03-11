@@ -73,6 +73,42 @@ alias so="source ~/.bash_profile"
 | FATIMA_HOME | fatima가 설치된(압축이 풀린) 디렉토리                      |
 | FATIMA_PROFILE | fatima가 실행되는 환경 (예, local, dev, stage, prod)  |
 
+### 2.1 fatima 공통 환경변수 설정
+`$FATIMA_HOME/conf` 디렉토리에 보면 `fatima-package-predefine.properties` 라는 이름으로 패키지 전체 공통 환경 변수를 지정하는 파일이 존재한다.
+```shell
+#var.global.package.groupname=mygroup
+#var.global.package.hostname=myhost
+#var.global.package.name=default
+
+var.host.ipaddress=${var.builtin.local.ipaddress}
+```
+
+`var.global.package.hostname` 는 기본적으로 hostname 값을 사용한다. `var.global.package.groupname`, `var.global.package.hostname` 등에 대해서는 필요하면 별도의 값을 지정해서 사용하도록 한다.
+var.host.ipaddress 변수의 경우 기본적으로 시스템의 network interface 에서 enx, ethx 등의 값을 가져와서 자동 세팅한다. 다만, 시스템 설정에 따라서 값을 못 가져올 수도 있으니 아래와 같이 서버의 ip 를 직접 기입해 주는것이 좋다
+
+```shell
+#var.host.ipaddress=${var.builtin.local.ipaddress}
+var.host.ipaddress=10.1.2.3  #10.1.2.3 은 예제
+```
+
+### 2.2 juno 환경 변수 설정
+`$FATIMA_HOME/app/juno` 디렉토리에 보면 `application.properties` 라는 파일이 아래와 같이 존재한다
+
+```shell
+gateway.address=0.0.0.0
+gateway.port=9190
+#webserver.address=${var.builtin.local.ipaddress}
+webserver.address=0.0.0.0
+webserver.port=9180
+```
+
+만약 실행하려는 파티마 패키지가 로컬 PC 라면 상관 없지만 리모트 서버라면 해당 서버의 IP를 직접 기재해 주어야 정상적으로 네트워킹이 된다. 따라서 아래처럼 properties 파일을 수정해 준다.
+
+```shell
+webserver.address=${var.builtin.local.ipaddress}
+#webserver.address=0.0.0.0
+```
+
 ## 3. fatima 패키지 실행
 
 Fatima 를 다운로드, 압축 해제 후 환경변수 설정까지 끝났다면 아래와 같이 실행을 해 본다.
