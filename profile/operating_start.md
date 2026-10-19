@@ -51,7 +51,7 @@ Fatima 환경은 $FATIMA_HOME을 비롯해서 몇 가지 사용하는 환경 변
 ```shell
 ###########################
 # FATIMA
-export FATIMA_HOME=/Users/djinch/IronForge/throosea/fatima-package
+export FATIMA_HOME=$HOME/fatima-package
 export FATIMA_PROFILE=local
 export PATH=.:$PATH:$FATIMA_HOME/bin
 export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH:$FATIMA_HOME/lib
